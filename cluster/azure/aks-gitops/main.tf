@@ -28,6 +28,7 @@ module "flux" {
   kubeconfig_complete  = "${module.aks.kubeconfig_done}"
   flux_clone_dir       = "${var.cluster_name}-flux"
   acr_enabled          = "${var.acr_enabled}"
+  prometheus_enabled   = "${var.prometheus_enabled}"
 }
 
 module "kubediff" {
